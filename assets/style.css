@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Sarala', sans-serif;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    background: #323232;
+}
+
+.title {
+    text-align: center;
+    margin-top: 70px;
+    color: #fff;
+}
+
+.effect {
+    width: 70px;
+    height: 70px;
+    background: rgba(153, 0, 255, 0.822);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: effect_animation;
+    animation-name: effect_animation;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes effect_animation{
+    0%{
+        -webkit-box-shadow: 0 0 0 0px rgba(153, 0, 255, 0.74);
+        box-shadow: 0 0 0 0px rgba(153, 0, 255, 0.74);
+    }100%{
+        -webkit-box-shadow: 0 0 0 50px rgba(153, 0, 255, 0.548);
+        box-shadow: 0 0 0 50px rgba(153, 0, 255, 0.548);
+    }
+}
+
+@keyframes effect_animation{
+    0%{
+        -webkit-box-shadow: 0 0 0 0px rgba(153, 0, 255, 0.74);
+        box-shadow: 0 0 0 0px rgba(153, 0, 255, 0.74);
+    }100%{
+        -webkit-box-shadow: 0 0 0 50px rgba(153, 0, 255, 0.548);
+        box-shadow: 0 0 0 50px rgba(153, 0, 255, 0.548);
+    }
+}
